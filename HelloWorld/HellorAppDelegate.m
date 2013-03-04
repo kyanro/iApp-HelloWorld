@@ -16,6 +16,14 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+ 
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 280.0f, 100.f)];
+    label.text = @"Hello World!";
+    [self.window addSubview:label];
+    
+    UILabel* label2 = [[UILabel alloc] initWithFrame:CGRectMake(30.0f, 200.0f, 280.0f, 100.0f)];
+    label2.text = @"hehehe";
+    [self.window addSubview:label2];
     return YES;
 }
 
